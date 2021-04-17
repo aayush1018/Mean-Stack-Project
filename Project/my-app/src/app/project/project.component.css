@@ -1,0 +1,32 @@
+#space{
+  margin-bottom: 50px;
+}
+#articleH{
+  background-color:#e9ecef;
+}
+.para{
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+article > p{
+    
+    clear: both
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}

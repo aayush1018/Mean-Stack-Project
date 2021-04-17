@@ -1,0 +1,76 @@
+<section>
+  <div id="space"></div> 
+  <main role="main" class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-6 blog-main" >
+
+  <div class="blog-post" >
+  <h3 style="text-align: center;"> Contact Us</h3>
+  <hr/>
+  <form [formGroup] = form (ngSubmit)="submit()" method="post">
+<div class="form-row">
+<div class="col-md-6 mb-3">
+  <label for="validationDefault01">First name</label>
+  <input type="text" formControlName="fname" class="form-control" id="validationDefault01" placeholder="First name"  required autofocus/>
+</div>
+<div class="col-md-6 mb-3">
+  <label for="validationDefault02">Last name</label>
+  <input type="text" formControlName="lname" class="form-control" id="validationDefault02" placeholder="Last name"  required/>
+</div>
+<div class="col-md-6 mb-3">
+  <label for="validationDefault03">City</label>
+  <input type="text" formControlName="city" class="form-control" id="validationDefault03" placeholder="City" required/>
+</div>
+<div class="col-md-12 mb-3">
+<label >Email address</label>
+<input type="email" formControlName="email" class="form-control" placeholder="Email address" required />
+</div>
+
+</div><!-- form row -->
+
+<div class="form-group" style="margin-top:5px;">
+<label for="exampleFormControlTextarea1">Suggestions</label>
+<textarea class="form-control" formControlName="suggest" id="exampleFormControlTextarea1" placeholder="Suggestions" rows="3"></textarea>
+</div>
+<br>
+<button class="btn w3-red" name="submit" type="submit">Submit form</button>
+<div id="space"></div> 
+</form>
+</div><!-- /.blog-post -->
+
+  
+
+</div><!-- /.blog-main -->
+
+<aside class="col-md-4 blog-sidebar">
+  <div class="p-4 mb-3 w3-pale-green rounded">
+    <h4 class="font-italic">About</h4>
+    <p class="mb-0">We group no. (118) have created this data sheet website on articles and projects on Electronics and Telecommunication
+      <br>The group members are as follows :-</p>
+      <ul class="list-unstyled">
+        <li>Rahul Poojary(56)</li>
+        <li>Tanushree Poojary (57)</li>
+        <li>Aayush Gupta(58)</li>
+        <li>Saurabh Kumar(59)</li>
+        <li>Bhavesh Purohit (60)</li>
+      </ul> 
+  </div>
+
+  <div class="p-4">
+    <h4 class="font-italic">Elsewhere</h4>
+    <ol class="list-unstyled">
+      <li><a href="https://github.com/aayush1018/Electronics-Project" target="_blank">GitHub</a></li>
+      
+    </ol>
+  </div>
+  <div class="mb-3 p-4" >
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7527915215023!2d72.87237481498421!3d19.205996787013476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e57647569d%3A0xc0aec329c82d3555!2sThakur%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1596463523448!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="container-fluid"></iframe>
+  </div>
+</aside><!-- /.blog-sidebar -->
+
+</div><!-- /.row -->
+</main>
+  </section> 
+
+

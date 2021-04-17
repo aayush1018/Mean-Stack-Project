@@ -1,0 +1,18 @@
+#space{
+    margin-bottom: 50px;
+}
+#articleH{
+    background-color:#e9ecef;
+  }
+  .para{
+      padding: 10px;
+      background-color:#e9ecef;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+  article > p{
+      
+      clear: both
+  }

@@ -1,0 +1,50 @@
+
+<section>
+  <div id="space"></div> 
+  <main role="main" class="container">
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-6 blog-main">
+
+  <div class="blog-post">
+<h3> Publish your article or projects on our website</h3>
+<hr/>
+<div id="space"></div>
+<form [formGroup] = form (ngSubmit)="submit()" enctype="multipart/form-data" method="post">
+<div class="form-group">
+ <label for="validationDefault03">Title of your Article</label>
+ <input type="text" formControlName="title" class="form-control" id="validationDefault03" placeholder="Title" required/><br>
+<label >Email address</label>
+<input type="email" formControlName="email" class="form-control" placeholder="Email address" required /><br>
+<label for="exampleFormControlFile1" style="margin-top:10px;">Upload Article or project (in pdf) </label>
+<input type="file" class="form-control-file" accept="application/pdf" formControlName="file" id="file" id="exampleFormControlFile1" required (change)="selectImage($event)"/><br>
+</div><br>
+<button class="btn w3-red" name="upload" type="submit" (click)="onSubmit()">Upload</button>
+<div id="space"></div>
+</form>
+
+</div><!-- /.blog-post -->
+
+  
+
+</div><!-- /.blog-main -->
+
+<aside class="col-md-4 blog-sidebar">
+<div class="p-4 mb-3 w3-pale-green rounded">
+  <h4 class="font-italic">About Us</h4>
+  <p class="mb-0">This website consists of articles and projects on Electronics and Telecommunication.
+    It also consists of project videos and you can also contribute to this website by uploading your article/project.</p>
+</div>
+
+<div class="p-4">
+  <h4 class="font-italic">Elsewhere</h4>
+  <ol class="list-unstyled">
+    <li><a href="https://github.com/aayush1018/Electronics-Project" target="_blank">GitHub</a></li>
+
+  </ol>
+</div>
+</aside><!-- /.blog-sidebar -->
+
+</div><!-- /.row -->
+</main>
+</section> 
